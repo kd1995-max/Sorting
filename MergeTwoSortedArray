@@ -1,0 +1,30 @@
+int* merge(int a[], int b[], m ,n){
+	int res[m + n];
+	int i = 0, res_cout, j = 0;
+	while(i < m && j < n)
+	{
+		if(a[i] <= b[j])
+		{
+			res[res_count] = a[i];
+			res_count++;
+			i++;
+		}
+		else{
+			res[res_count] = arr[j];
+			res_count++;
+			j++;
+		}
+	}
+	
+	if(i < m){
+		res[res_count] = a[i];
+		i++;
+		res_count++;
+	}
+	if(j < n){
+		res[res_count]=b[j];
+		j++;
+		res_count++;
+	}
+	return res;
+}
