@@ -1,0 +1,14 @@
+int iPartition(int arr[] , int l , int h)
+{
+  int pivot = arr[h];
+  int lesser = l - 1;
+  for(int greater = l; greater <= h; greater++)
+  {
+    if(arr[greater] < pivot){
+      lesser++;
+      swap(arr[lesser] , arr[greater]);
+    }
+  }
+  swap(arr[greater + 1] , arr[h]);
+  return i + 1;
+}
